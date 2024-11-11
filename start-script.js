@@ -72,7 +72,7 @@ document.addEventListener("DOMContentLoaded", function() {
         console.log(reposList)
         console.log(reposList[0].name);
         for (let repo of reposList) {
-            createProjectDiv(repo.name.replace(/_/g, ' '), repo.description, "assets/" + repo.language + ".png", repo.language, repo.url);
+            createProjectDiv(repo.name.replace(/_/g, ' '), repo.description, "assets/" + (repo.language).toLowerCase() + ".png", repo.language, repo.url);
         }
     });
 });
