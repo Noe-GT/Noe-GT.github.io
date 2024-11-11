@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="animations.css">
+    <link rel="stylesheet" href="narrow-style.css">
+    <title>Noe Gebert - Portfolio</title>
+    <script src="start-script.js"></script>
+    <script src="action-script.js"></script>
+</head>
+<body>
+    <div id="navbar-container">
+        <div id="navbar-top">
+            <a class="inter-ebold" id="navbar-logo" href="#intro-container">Noe GEBERT</a>
+            <div id="hamburger-icon" onclick="toggleMenu()">&#9776;</div>
+            <nav id="navbar">
+                <a id="nav-elem" href="#intro-container">About</a>
+                <a href="#projects-container">Projects</a>
+                <a href="#footer-menu">Contact</a>
+            </nav>
+        </div>
+        <div id="ham-nav-menu">
+            <ul id="ham-nav-elems">
+                <li onclick="toggleMenu()"><a href="#intro-container">About</a></li>
+                <li onclick="toggleMenu()"><a href="#projects-container">Projects</a></li>
+                <li onclick="toggleMenu()"><a href="#footer-menu">Contact</a></li>
+            </ul>
+        </div>
+    </div>
+    <div id="main-container">
+        <div class="sub-container" id="intro-container">
+            <div id="intro-section"  class="fade-in-anim" class="section-container">
+                <div id="intro-left">
+                    <a>Who</a>
+                    <a>am I ?</a>
+                </div>
+                <div id="intro-sep"></div>
+                <div id="intro-right">
+                    <a>Currently</a>
+                    <a>Studying IT at</a>
+                    <a class="inter-ebold-italic">EPITECH</a>
+                    <a class="inter-elight-italic">I am a passionate</a>
+                    <a class="inter-elight-italic">tech enthusiast</a>
+                </div>
+            </div>
+        </div>
+        <div class="sub-container" id="projects-container">
+            <div id="projects-section" class="fade-in-anim" class="section-container">
+                <h2>Projects</h2>
+                <div class="horizontal-sep"></div>
+                <div class="project">
+                    <div id="project-top">
+                        <h3>This is a long project name</h3>
+                        <img src="assets/c.png" alt="c">
+                    </div>
+                    <div id="project-bottom">
+                        <p>This is a test text explaining the project as long en eia </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- <div class="sub-container">
+            <div id="skills-left">
+                <nav>
+                    <a>Code</a>
+                    <a>WEB</a>
+                    <a>Devops</a>
+                </nav>
+            </div>
+            <div id="skills-sep">
+            </div>
+            <div id="skills-right">
+            </div>
+        </div> -->
+    </div>
+    <footer>
+        <h2>Contact me</h2>
+        <div id="footer-menu">
+            <div class="footer-menu-elem">
+                <a href="">LinkedIn</a>
+                <img src="assets/linkedin.png" alt="c">
+            </div>
+            <div class="footer-menu-elem">
+                <a href="">Mail</a>
+                <img src="assets/email.png" alt="c">
+            </div>
+            <div class="footer-menu-elem">
+                <a href="https://github.com/Noe-GT">GitHub</a>
+                <img src="assets/github.png" alt="c">
+            </div>
+        </div>
+        <div id="copyright">&copy; 2024 Noe Gebert. All rights reserved.</div>
+    </footer>
+</body>
